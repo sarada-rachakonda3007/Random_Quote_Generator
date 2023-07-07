@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      background-image: url('');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #FFF;
+      margin-bottom: 20px;
+    }
+
+    #quote {
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #EEE;
+      font-style: italic;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #FF4081;
+      color: #FFF;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background-color: #800080;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .social-icon {
+      display: inline-block;
+      margin-right: 10px;
+      color: #FFF;
+      font-size: 24px;
+    }
+
+    .social-icon:hover {
+      color: #800080;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Random Quote Generator</h1>
+    <div id="quote"></div>
+    <button onclick="generateQuote()">Generate Quote</button>
+    <div class="social-icons">
+      <a href="#" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
