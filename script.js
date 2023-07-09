@@ -12,15 +12,16 @@ const quotes = [
   "You are never too old to set another goal or to dream a new dream. - C.S. Lewis"
 ];
 
-// Function to generate a random quote
 function generateQuote() {
   // Get a random index from the quotes array
   const randomIndex = Math.floor(Math.random() * quotes.length);
 
-  // Display the random quote
-  const quoteElement = document.getElementById("quote");
-  quoteElement.textContent = quotes[randomIndex];
-}
+  // Separate the quote and the person's name
+  const quoteParts = quotes[randomIndex].split(" - ");
+  const quote = quoteParts[0];
+  const person = quoteParts[1];
 
-// Initial quote generation
-generateQuote();
+  // Display the random quote with the person's name centered on the next line
+  const quoteElement = document.getElementById("quote");
+  quoteElement.innerHTML = `${quote}<br><span style="text-align: center;">- ${person}</span>`;
+}
